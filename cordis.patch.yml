@@ -1,0 +1,14 @@
+# dsh-subagent-endpoint-limits — Host row.
+#
+# The row id is the settings namespace the Subagent page section edits
+# (`subagent-endpoint-limits`). `limits` is volatile, so a save updates the
+# running capacity gate without remounting the plugin.
+#
+# The caps are additive to the official Host `subagent` setting: a child must
+# fit both the global parallelism limit and its own endpoint's cap.
+
+- insert:
+    - id: subagent-endpoint-limits
+      name: '@local/dsh-subagent-endpoint-limits'
+      config:
+        limits: []

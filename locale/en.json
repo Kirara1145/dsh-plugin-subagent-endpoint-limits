@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent endpoint limits",
+    "description": "Caps how many subagents each model endpoint may run at once from the Plugins → Subagent page."
+  }
+}
